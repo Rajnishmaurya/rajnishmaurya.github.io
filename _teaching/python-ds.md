@@ -2,7 +2,7 @@
 
 title: "Teaching Assistant – Python and Data Structures for Data Science"
 collection: teaching
---------------------
+---
 
 Teaching Assistant at **IIT Madras**.
 

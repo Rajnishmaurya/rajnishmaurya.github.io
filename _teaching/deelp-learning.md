@@ -2,7 +2,7 @@
 
 title: "Teaching Assistant – Introduction to Deep Learning"
 collection: teaching
---------------------
+---
 
 Teaching Assistant at **IIT Madras**.
 

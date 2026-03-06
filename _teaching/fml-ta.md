@@ -2,7 +2,7 @@
 
 title: "Teaching Assistant – Foundation of Machine Learning"
 collection: teaching
---------------------
+---
 
 Teaching Assistant at **Indian Institute of Technology Madras**.
 
