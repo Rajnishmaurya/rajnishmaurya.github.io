@@ -4,7 +4,10 @@ title: "Twitter Sentiment Analysis – End-to-End MLOps Pipeline"
 collection: portfolio
 ---
 
-Developed a complete **MLOps pipeline for tweet sentiment classification**.
+Developed an end-to-end **MLOps pipeline for tweet sentiment classification**.
+
+**GitHub Repository:**  
+https://github.com/Rajnishmaurya/twitter-sentiment-AI-project
 
 ### Technologies
 
