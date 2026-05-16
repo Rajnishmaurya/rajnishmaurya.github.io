@@ -1,15 +1,12 @@
-name: Rajnish Maurya
-role: M.Tech Data Science & AI
-institution: IIT Madras
-location: Chennai, India
-email: mauryarajnish73@gmail.com
-github: rajnishmaurya
-linkedin: rajnish-maurya-b90393182
-skills:
-  - Python
-  - Machine Learning
-  - Deep Learning
-  - Data Science
-  - Neural Networks
-  - NLP
-  - Optimization
+name: "Rajnish Maurya"
+role: "M.Tech Data Science & Artificial Intelligence · IIT Madras"
+location: "Chennai, India"
+email: "mauryarajnish73@gmail.com"
+github: "https://github.com/rajnishmaurya"
+linkedin: "https://www.linkedin.com/in/rajnish-maurya-b90393182"
+summary: "AI/ML researcher and engineer focused on LLM evaluation, LoRA fine-tuning, vision-language models, and MLOps systems."
+highlights:
+  - "Applied Research Intern at Bosch Global Software Technologies"
+  - "IndiaAI Fellowship 2025"
+  - "Amazon Machine Learning Summer School 2025"
+  - "AIR 300 in GATE DA 2024"

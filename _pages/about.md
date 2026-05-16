@@ -1,13 +1,24 @@
 ---
-permalink: /about/
 title: "About"
+permalink: /about/
+layout: single
 author_profile: true
 ---
 
-# About
+I am Rajnish Maurya, an M.Tech Data Science and Artificial Intelligence student at IIT Madras. My interests include machine learning, deep learning, natural language processing, computer vision, large language models, and MLOps.
 
-I am **Rajnish Maurya**, an M.Tech student in **Data Science and Artificial Intelligence at IIT Madras**.
+My recent work includes trajectory prediction with vision-language foundation models, mathematical LLM evaluation and LoRA fine-tuning, and end-to-end MLOps pipelines for sentiment analysis.
 
-My interests include machine learning, deep learning, data science, neural networks, NLP, optimization, and building clean AI systems that are easy to understand and reproduce.
+## Education
 
-This repository also includes a modern static `index.html` landing page, so the portfolio looks polished immediately on GitHub Pages.
+- M.Tech in Data Science and Artificial Intelligence, IIT Madras, 2024–2026
+- M.Tech in Computer Science and Engineering, IIT Bhubaneswar, 2023–2024
+- B.Tech in Computer Science and Engineering, IIIT Kalyani, 2022
+
+## Highlights
+
+- Selected for Amazon Machine Learning Summer School 2025
+- Received IndiaAI Fellowship 2025 by Government of India
+- Secured AIR 300 in GATE 2024 Data Science and Artificial Intelligence
+- Secured AIR 1594 in GATE 2023 Computer Science
+- Solved 400+ coding problems on LeetCode and GeeksforGeeks

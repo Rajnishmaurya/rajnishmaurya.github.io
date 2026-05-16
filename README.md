@@ -1,17 +1,15 @@
-# Rajnish Maurya — Enhanced GitHub Pages Portfolio
+# Rajnish Maurya — Resume-Based GitHub Pages Portfolio
 
-This zip contains a visually upgraded GitHub Pages portfolio based on the files you uploaded.
+This package contains a visually upgraded GitHub Pages portfolio based on the Academic Pages structure.
 
-## What changed
+## Main improvements
 
-- Added a modern responsive landing page: `index.html`
-- Added polished styling: `assets/css/portfolio.css`
-- Added small interactive behavior: `assets/js/portfolio.js`
-- Added generated avatar/social images in `images/`
-- Cleaned uploaded filenames by removing `(1)` / `(3)` suffixes
-- Improved `_config.yml` site metadata and author bio
-- Added optional Jekyll pages under `_pages/`
-- Added a simple profile data file at `_data/profile.yml`
+- Resume-based homepage content
+- Dynamic homepage sections for `_portfolio`, `_teaching`, `_publications`, and `_talks`
+- Added project entries under `_portfolio`
+- Added teaching entries under `_teaching`
+- Improved About, Projects, Teaching, Research, and Contact pages
+- Modern responsive CSS and light/dark theme toggle
 
 ## How to use
 
@@ -20,36 +18,27 @@ This zip contains a visually upgraded GitHub Pages portfolio based on the files 
 3. Commit and push:
 
 ```bash
-git add .
-git commit -m "Improve portfolio design"
+git add -A
+git commit -m "Update portfolio with resume-based content"
 git push origin main
 ```
 
 4. Open `https://rajnishmaurya.github.io` after GitHub Pages finishes building.
 
-## Local preview
-
-Use either Jekyll directly:
-
-```bash
-bundle install
-bundle exec jekyll serve -l -H localhost
-```
-
-or Docker:
-
-```bash
-docker compose up --build
-```
-
-Then open `http://localhost:4000`.
-
 ## Where to edit content
 
-- Main landing page content: `index.html`
-- Colors/layout: `assets/css/portfolio.css`
-- Theme toggle / animations: `assets/js/portfolio.js`
-- Jekyll site settings: `_config.yml`
-- Optional profile metadata: `_data/profile.yml`
+- Main homepage: `index.html`
+- Projects: `_portfolio/*.md`
+- Teaching: `_teaching/*.md`
+- About page: `_pages/about.md`
+- Projects listing page: `_pages/projects.md`
+- Teaching listing page: `_pages/teaching.md`
+- Research page: `_pages/research.md`
+- Contact page: `_pages/contact.md`
+- Design/CSS: `assets/css/portfolio.css`
+- JavaScript: `assets/js/portfolio.js`
+- Site settings: `_config.yml`
 
-The original Academic Pages README is preserved as `README_academicpages_original.md`.
+## Important
+
+Use `_teaching`, not `_teching`. The Academic Pages Jekyll collection is configured for `_teaching`.

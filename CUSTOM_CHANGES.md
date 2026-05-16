@@ -1,18 +1,23 @@
 # Custom Portfolio Enhancement Notes
 
-## Visual improvements
-- Modern hero section with gradient background, glassmorphism card, responsive layout, and clear call-to-action buttons.
-- Skill chips, project cards, research timeline, and contact card for better scanning.
-- Dark/light theme toggle with saved preference.
-- Reveal-on-scroll animations for a smoother user experience.
+## What this version improves
 
-## Structural improvements
-- Cleaned filenames so the repository can be used directly.
-- Added `_pages` files for About, Projects, Research, and Contact.
-- Added `images/profile.png`, `images/favicon.svg`, and `images/social-card.svg`.
-- Updated package metadata and added useful serve scripts.
+- The homepage now contains resume-based sections for About, Education, Achievements, Experience, Projects, Research, Teaching, Skills, Coursework, Certifications, and Contact.
+- The homepage dynamically reads content from Academic Pages collections:
+  - `_portfolio`
+  - `_teaching`
+  - `_publications`
+  - `_talks`
+- Added resume-based Markdown entries under `_portfolio` and `_teaching` so content appears automatically.
+- Added `_pages/teaching.md` and improved About, Projects, Research, and Contact pages.
+- Kept the modern visual design, dark/light mode, responsive layout, and reveal-on-scroll animations.
 
-## Next recommended edits
-- Replace placeholder project cards in `index.html` with real GitHub repository links.
-- Add a real profile photo as `images/profile.png` if preferred.
-- Add publications or reports under `_pages/research.md`.
+## Important folder names
+
+Academic Pages expects the folder to be named `_teaching`, not `_teching`.
+
+## Next edits
+
+- Replace placeholder GitHub links inside project pages if you want direct repository buttons.
+- Replace `images/profile.png` with a real profile photo if preferred.
+- Add publications in `_publications` and talks in `_talks`; they will automatically appear on the homepage.

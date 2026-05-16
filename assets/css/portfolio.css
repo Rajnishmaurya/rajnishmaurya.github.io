@@ -355,3 +355,135 @@ h3 { font-size: 1.25rem; line-height: 1.2; letter-spacing: -0.03em; margin-botto
   .timeline-item { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; align-items: flex-start; }
 }
+
+/* Resume-driven homepage sections */
+.resume-grid,
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.collection-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.resume-card,
+.collection-panel,
+.wide-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 1.25rem;
+}
+
+.featured-card {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
+
+.card-kicker {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+.resume-card h3,
+.collection-panel h3,
+.wide-card h3 {
+  margin: 0 0 0.45rem;
+  color: var(--heading);
+}
+
+.resume-card p,
+.collection-panel p,
+.wide-card p {
+  color: var(--muted);
+}
+
+.resume-card strong {
+  color: var(--heading);
+}
+
+.achievement-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+}
+
+.achievement-strip span,
+.mini-tags span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--chip-bg);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.48rem 0.72rem;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.wide-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.clean-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.clean-list li {
+  margin: 0.45rem 0;
+}
+
+.compact-list li {
+  margin: 0.55rem 0;
+}
+
+.inline-link {
+  display: inline-flex;
+  margin-top: 0.8rem;
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  text-decoration: underline;
+}
+
+.mini-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.muted {
+  color: var(--muted) !important;
+}
+
+code {
+  background: var(--chip-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+  padding: 0.12rem 0.3rem;
+  font-size: 0.9em;
+}
+
+@media (max-width: 920px) {
+  .resume-grid,
+  .collection-grid,
+  .wide-card {
+    grid-template-columns: 1fr;
+  }
+}

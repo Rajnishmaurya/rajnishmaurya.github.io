@@ -1,17 +1,21 @@
+---
+layout: null
+title: "Rajnish Maurya | Data Science & AI Portfolio"
+---
 <!doctype html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rajnish Maurya | Data Science & AI Portfolio</title>
-  <meta name="description" content="Portfolio of Rajnish Maurya, M.Tech Data Science & AI student at IIT Madras focused on machine learning, deep learning, and data-driven systems." />
+  <meta name="description" content="Portfolio of Rajnish Maurya, M.Tech Data Science and Artificial Intelligence student at IIT Madras focused on LLMs, machine learning, deep learning, and MLOps." />
   <meta name="theme-color" content="#2563eb" />
   <meta property="og:title" content="Rajnish Maurya | Data Science & AI Portfolio" />
-  <meta property="og:description" content="Machine Learning, Deep Learning, Data Science, and AI projects." />
+  <meta property="og:description" content="LLMs, Machine Learning, Deep Learning, MLOps, and Data Science projects." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/images/social-card.svg" />
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/portfolio.css" />
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -24,9 +28,11 @@
       <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
       </div>
@@ -37,20 +43,20 @@
     <section class="hero section-shell">
       <div class="hero-copy reveal">
         <p class="eyebrow">M.Tech Data Science & Artificial Intelligence · IIT Madras</p>
-        <h1>Passionate Data Science and AI Engineer building real-world machine learning solutions.</h1>
+        <h1>Building research-driven AI, LLM, and MLOps systems.</h1>
         <p class="hero-subtitle">I am an M.Tech Data Science and Artificial Intelligence student at IIT Madras, with experience in vision-language foundation models, mathematical LLM evaluation, LoRA fine-tuning, and end-to-end MLOps pipelines.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View Projects</a>
           <a class="btn secondary" href="mailto:mauryarajnish73@gmail.com">Contact Me</a>
         </div>
         <div class="quick-facts" aria-label="Portfolio highlights">
-          <div><strong>IIT Madras</strong><span>Data Science & AI</span></div>
-          <div><strong>ML/DL</strong><span>Core Focus</span></div>
-          <div><strong>Chennai</strong><span>India</span></div>
+          <div><strong>AIR 300</strong><span>GATE DA 2024</span></div>
+          <div><strong>IndiaAI</strong><span>Fellow 2025</span></div>
+          <div><strong>Amazon MLSS</strong><span>Selected 2025</span></div>
         </div>
       </div>
       <aside class="hero-card reveal" aria-label="Profile card">
-        <img src="images/profile.png" alt="Profile avatar for Rajnish Maurya" class="avatar" />
+        <img src="{{ '/images/profile.png' | relative_url }}" alt="Profile avatar for Rajnish Maurya" class="avatar" />
         <div class="status-pill"><span></span> Open to AI/ML opportunities</div>
         <h2>Rajnish Maurya</h2>
         <p>M.Tech in Data Science & Artificial Intelligence at Indian Institute of Technology Madras.</p>
@@ -65,11 +71,183 @@
     <section class="section-shell about-grid" id="about">
       <div class="section-heading reveal">
         <p class="eyebrow">About</p>
-        <h2>Research-minded engineer with a product mindset.</h2>
+        <h2>Research-minded AI engineer with hands-on ML systems experience.</h2>
       </div>
       <div class="about-content reveal">
-        <p>I enjoy designing machine learning workflows that are interpretable, reproducible, and useful in real-world settings. My interests include supervised learning, deep neural networks, NLP, optimization, and deployment-ready AI systems.</p>
-        <p>This portfolio is structured to make projects, research interests, and contact details easy to scan for recruiters, professors, collaborators, and peers.</p>
+        <p>I work on applied machine learning, deep learning, NLP, LLM evaluation, and reproducible AI systems. My recent work includes trajectory prediction using vision-language foundation models, mathematical question generation using LLMs, and production-style MLOps pipelines with FastAPI, Docker, MLflow, DVC, Prometheus, and Grafana.</p>
+        <p>I enjoy connecting research ideas with reliable engineering practices: careful data preparation, strong baselines, systematic evaluation, efficient fine-tuning, and clean deployment workflows.</p>
+      </div>
+    </section>
+
+    <section class="section-shell" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Education & Achievements</p>
+        <h2>Academic background and competitive milestones.</h2>
+      </div>
+      <div class="resume-grid reveal">
+        <article class="resume-card featured-card">
+          <span class="card-kicker">2024–2026</span>
+          <h3>M.Tech · Data Science and Artificial Intelligence</h3>
+          <p>Indian Institute of Technology Madras</p>
+          <strong>CGPA: 8.42</strong>
+        </article>
+        <article class="resume-card">
+          <span class="card-kicker">2023–2024</span>
+          <h3>M.Tech · Computer Science and Engineering</h3>
+          <p>Indian Institute of Technology Bhubaneswar</p>
+          <strong>CGPA: 8.16</strong>
+        </article>
+        <article class="resume-card">
+          <span class="card-kicker">2022</span>
+          <h3>B.Tech · Computer Science and Engineering</h3>
+          <p>Indian Institute of Information Technology Kalyani</p>
+          <strong>CGPA: 8.18</strong>
+        </article>
+      </div>
+      <div class="achievement-strip reveal" aria-label="Achievements">
+        <span>Selected for Amazon Machine Learning Summer School 2025</span>
+        <span>Received IndiaAI Fellowship 2025 by Government of India</span>
+        <span>Secured AIR 300 in GATE 2024 Data Science and AI</span>
+        <span>Secured AIR 1594 in GATE 2023 Computer Science</span>
+        <span>Solved 400+ coding problems on LeetCode and GeeksforGeeks</span>
+      </div>
+    </section>
+
+    <section class="section-shell" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Professional Experience</p>
+        <h2>Applied research experience in multimodal AI.</h2>
+      </div>
+      <article class="wide-card reveal">
+        <div>
+          <span class="card-kicker">May 2025 – July 2025 · Bangalore</span>
+          <h3>Applied Research Intern · Bosch Global Software Technologies</h3>
+          <p class="muted">Trajectory training using vision-language foundation models</p>
+        </div>
+        <ul class="clean-list">
+          <li>Developed trajectory prediction models using fine-tuned vision-language and multimodal models.</li>
+          <li>Conducted literature reviews, prototype design, and model evaluation.</li>
+          <li>Achieved RMSE approximately 3 for trajectory prediction tasks with 60 points across x, y, and z coordinates.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-shell" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Portfolio & Projects</p>
+        <h2>Selected work from research, MLOps, and deep learning.</h2>
+      </div>
+      <div class="project-grid">
+        {% assign portfolio_items = site.portfolio | sort: "date" | reverse %}
+        {% if portfolio_items.size > 0 %}
+          {% for item in portfolio_items %}
+          <article class="project-card reveal">
+            <div class="project-topline"><span>{{ item.category | default: "Portfolio" }}</span><span>{{ item.date | date: "%Y" }}</span></div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.excerpt | strip_html | strip_newlines | truncate: 190 }}</p>
+            {% if item.tags %}<div class="tags">{% for tag in item.tags limit:4 %}<span>{{ tag }}</span>{% endfor %}</div>{% endif %}
+            <a class="inline-link" href="{{ item.url | relative_url }}">Read more →</a>
+          </article>
+          {% endfor %}
+        {% else %}
+          <article class="project-card reveal">
+            <div class="project-topline"><span>LLMs</span><span>Research</span></div>
+            <h3>Investigating LLMs for Mathematics Question Generation</h3>
+            <p>Evaluated 19 open-source mathematical LLMs using zero-shot and few-shot prompting, built a 39K-sample fine-tuning dataset, and fine-tuned Qwen3-4B-Instruct using LoRA.</p>
+            <div class="tags"><span>LLMs</span><span>LoRA</span><span>Qwen</span><span>Evaluation</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-topline"><span>MLOps</span><span>NLP</span></div>
+            <h3>Twitter Sentiment Analysis — End-to-End MLOps Pipeline</h3>
+            <p>Designed and deployed a tweet sentiment classification pipeline using SVM with TF-IDF, FastAPI, Docker Compose, MLflow, DVC, Prometheus, PushGateway, and Grafana.</p>
+            <div class="tags"><span>FastAPI</span><span>MLflow</span><span>DVC</span><span>Docker</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-topline"><span>Deep Learning</span><span>Time Series</span></div>
+            <h3>Climate Forecasting with LSTM and Statistical Models</h3>
+            <p>Built forecasting models for stratospheric temperature and rainfall precipitation using ERA5 and historical climate data, applying LSTM, ARIMA, and SARIMAX methods.</p>
+            <div class="tags"><span>LSTM</span><span>ARIMA</span><span>SARIMAX</span><span>Climate AI</span></div>
+          </article>
+        {% endif %}
+      </div>
+      <p class="helper-note reveal">This section automatically shows every Markdown file inside your <code>_portfolio</code> collection.</p>
+    </section>
+
+    <section class="section-shell timeline-section" id="research">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Research Focus</p>
+        <h2>Current directions I am excited to explore.</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span>01</span>
+          <div><h3>Mathematical LLM Evaluation</h3><p>Evaluating topic adherence, difficulty alignment, mathematical correctness, structural consistency, usability, and diversity in generated mathematics questions.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span>02</span>
+          <div><h3>Parameter-Efficient Fine-Tuning</h3><p>Building curated fine-tuning datasets and using LoRA to improve open-source LLMs for mathematical question generation.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span>03</span>
+          <div><h3>Vision-Language Foundation Models</h3><p>Applying multimodal foundation models to trajectory prediction and evaluating their performance on structured prediction tasks.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="teaching">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Teaching</p>
+        <h2>Teaching assistantship and academic support roles.</h2>
+      </div>
+      <div class="resume-grid reveal">
+        {% assign teaching_items = site.teaching | sort: "date" | reverse %}
+        {% if teaching_items.size > 0 %}
+          {% for item in teaching_items %}
+          <article class="resume-card">
+            <span class="card-kicker">{{ item.date | date: "%b %Y" }}{% if item.term %} · {{ item.term }}{% endif %}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.venue | default: item.institution | default: "IIT Madras" }}</p>
+            <p>{{ item.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>
+            <a class="inline-link" href="{{ item.url | relative_url }}">Details →</a>
+          </article>
+          {% endfor %}
+        {% else %}
+          <article class="resume-card"><span class="card-kicker">Jan – May 2025</span><h3>Teaching Assistant · Foundation of Machine Learning</h3><p>IIT Madras</p></article>
+          <article class="resume-card"><span class="card-kicker">Sept – Dec 2025</span><h3>Teaching Assistant · Python and Data Structures for DS</h3><p>IIT Madras</p></article>
+          <article class="resume-card"><span class="card-kicker">Jan – Apr 2026</span><h3>Teaching Assistant · Introduction to Deep Learning</h3><p>IIT Madras</p></article>
+        {% endif %}
+      </div>
+      <p class="helper-note reveal">This section automatically shows every Markdown file inside your <code>_teaching</code> collection.</p>
+    </section>
+
+    <section class="section-shell" id="academic-content">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Publications, Talks & Extra Content</p>
+        <h2>Collection content from Academic Pages.</h2>
+      </div>
+      <div class="collection-grid reveal">
+        <article class="collection-panel">
+          <h3>Publications</h3>
+          {% assign publication_items = site.publications | sort: "date" | reverse %}
+          {% if publication_items.size > 0 %}
+            <ul class="clean-list compact-list">
+              {% for item in publication_items %}<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>{% endfor %}
+            </ul>
+          {% else %}
+            <p class="muted">No publication files found yet. Add Markdown files inside <code>_publications</code> and they will appear here automatically.</p>
+          {% endif %}
+        </article>
+        <article class="collection-panel">
+          <h3>Talks</h3>
+          {% assign talk_items = site.talks | sort: "date" | reverse %}
+          {% if talk_items.size > 0 %}
+            <ul class="clean-list compact-list">
+              {% for item in talk_items %}<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>{% endfor %}
+            </ul>
+          {% else %}
+            <p class="muted">No talk files found yet. Add Markdown files inside <code>_talks</code> and they will appear here automatically.</p>
+          {% endif %}
+        </article>
       </div>
     </section>
 
@@ -79,85 +257,58 @@
         <h2>Skills that support end-to-end AI development.</h2>
       </div>
       <div class="skill-cloud reveal">
-        <span>Python</span><span>Machine Learning</span><span>Deep Learning</span><span>Data Science</span><span>Neural Networks</span><span>NLP</span><span>Optimization</span><span>Model Evaluation</span><span>GitHub Pages</span><span>Research Writing</span>
+        <span>Python</span><span>C++</span><span>SQL</span><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Computer Vision</span><span>LLMs</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>NLTK</span><span>Pandas</span><span>NumPy</span><span>Flask</span><span>FastAPI</span><span>Git</span><span>MLflow</span><span>DVC</span><span>Docker</span><span>Grafana</span><span>Prometheus</span><span>Roboflow</span><span>Hugging Face PEFT</span><span>TRL</span><span>LoRA</span>
       </div>
       <div class="feature-grid reveal">
         <article class="feature-card">
           <div class="icon">▧</div>
           <h3>Model Development</h3>
-          <p>Clean experimentation, feature engineering, baseline models, and neural network workflows.</p>
+          <p>Supervised learning, deep neural networks, NLP models, trajectory prediction, and mathematical LLM workflows.</p>
         </article>
         <article class="feature-card">
           <div class="icon">⌁</div>
-          <h3>Data-Centric Thinking</h3>
-          <p>Careful dataset preparation, evaluation design, error analysis, and result interpretation.</p>
+          <h3>Evaluation & Research</h3>
+          <p>Literature reviews, prototype design, prompt evaluation, difficulty alignment, correctness checks, and diversity analysis.</p>
         </article>
         <article class="feature-card">
           <div class="icon">⚙</div>
-          <h3>Deployment Awareness</h3>
-          <p>Portfolio and project structure designed for maintainability, reproducibility, and presentation.</p>
+          <h3>MLOps & Deployment</h3>
+          <p>Reproducible pipelines, model tracking, containerized APIs, data versioning, monitoring, and dashboarding.</p>
         </article>
       </div>
     </section>
 
-    <section class="section-shell" id="projects">
+    <section class="section-shell" id="coursework">
       <div class="section-heading reveal">
-        <p class="eyebrow">Selected Projects</p>
-        <h2>Project cards ready for your real GitHub repositories.</h2>
+        <p class="eyebrow">Coursework & Certifications</p>
+        <h2>Foundations across algorithms, ML, NLP, DL, CV, and MLOps.</h2>
       </div>
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <div class="project-topline"><span>ML</span><span>Research</span></div>
-          <h3>Mathematics QA Generation with LLMs</h3>
-          <p>Benchmarking language models for probability and statistics question generation across difficulty levels and reasoning quality.</p>
-          <div class="tags"><span>LLMs</span><span>Evaluation</span><span>Math AI</span></div>
+      <div class="collection-grid reveal">
+        <article class="collection-panel">
+          <h3>Relevant Coursework</h3>
+          <div class="mini-tags"><span>Design and Analysis of Algorithms</span><span>Engineering Mathematics</span><span>Data Analytics Laboratory</span><span>Foundation of Machine Learning</span><span>Natural Language Processing</span><span>Deep Learning</span><span>Computer Vision</span><span>Hugging Face PEFT and TRL</span><span>Machine Learning Operations Lab</span></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-topline"><span>DL</span><span>Vision</span></div>
-          <h3>Deep Learning Image Classification</h3>
-          <p>Experiment-driven comparison of CNN architectures, hyperparameters, and validation strategies for robust image classification.</p>
-          <div class="tags"><span>CNN</span><span>W&B</span><span>PyTorch</span></div>
+        <article class="collection-panel">
+          <h3>Certifications</h3>
+          <ul class="clean-list compact-list">
+            <li>Introduction to LLMs · NPTEL · Jan 2025 – May 2025</li>
+            <li>Machine Learning with Python · Verzeo · Dec 2020 – Jan 2021</li>
+            <li>Data Science · Internshala · May 2020 – Jun 2020</li>
+          </ul>
         </article>
-        <article class="project-card reveal">
-          <div class="project-topline"><span>MLOps</span><span>Systems</span></div>
-          <h3>Production-style ML Pipeline</h3>
-          <p>Reusable pipeline structure for training, tracking, serving, and monitoring machine learning models.</p>
-          <div class="tags"><span>MLflow</span><span>Docker</span><span>FastAPI</span></div>
-        </article>
-      </div>
-      <p class="helper-note reveal">Replace these examples with your actual project links whenever you are ready.</p>
-    </section>
-
-    <section class="section-shell timeline-section" id="research">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Research Interests</p>
-        <h2>Areas I am excited to explore.</h2>
-      </div>
-      <div class="timeline reveal">
-        <div class="timeline-item">
-          <span>01</span>
-          <div><h3>Trustworthy ML Evaluation</h3><p>Designing evaluation setups that measure correctness, robustness, and reasoning quality.</p></div>
-        </div>
-        <div class="timeline-item">
-          <span>02</span>
-          <div><h3>LLMs for Mathematical Education</h3><p>Generating high-quality questions, solutions, and explanations for probability, statistics, and related subjects.</p></div>
-        </div>
-        <div class="timeline-item">
-          <span>03</span>
-          <div><h3>Efficient AI Systems</h3><p>Combining strong modeling practices with clean software engineering and deployment workflows.</p></div>
-        </div>
       </div>
     </section>
 
     <section class="section-shell contact-card reveal" id="contact">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2>Let’s connect for projects, research, or collaboration.</h2>
-        <p>Best way to reach me is by email or LinkedIn. I am interested in AI/ML research, applied machine learning, and data science opportunities.</p>
+        <h2>Let’s connect for research, projects, or collaboration.</h2>
+        <p>Best way to reach me is by email or LinkedIn. I am interested in AI/ML research, mathematical LLM evaluation, applied machine learning, and MLOps opportunities.</p>
       </div>
       <div class="contact-actions">
         <a class="btn primary" href="mailto:mauryarajnish73@gmail.com">Email Rajnish</a>
         <a class="btn secondary" href="https://github.com/rajnishmaurya" target="_blank" rel="noreferrer">GitHub Profile</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/rajnish-maurya-b90393182" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
     </section>
   </main>
@@ -167,6 +318,6 @@
     <a href="#top">Back to top ↑</a>
   </footer>
 
-  <script src="assets/js/portfolio.js"></script>
+  <script src="{{ '/assets/js/portfolio.js' | relative_url }}"></script>
 </body>
 </html>

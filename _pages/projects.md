@@ -1,18 +1,18 @@
 ---
-permalink: /projects/
 title: "Projects"
+permalink: /projects/
+layout: single
 author_profile: true
 ---
 
-# Projects
+This page lists portfolio/project entries from the `_portfolio` collection.
 
-Add your real project summaries here. Suggested structure:
+{% assign items = site.portfolio | sort: "date" | reverse %}
+{% for item in items %}
+## [{{ item.title }}]({{ item.url | relative_url }})
 
-- **Project title**
-- Problem statement
-- Dataset / tools used
-- Key results
-- GitHub repository link
-- Demo or report link
+{{ item.excerpt }}
 
-You can also edit the project cards in `index.html` for the landing page.
+{% if item.tags %}**Tags:** {{ item.tags | join: ", " }}{% endif %}
+
+{% endfor %}
