@@ -487,3 +487,218 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   AI ENGINEER THEME ENHANCEMENTS
+   ============================================================ */
+
+/* Neural-network canvas sits behind hero content */
+.hero { position: relative; overflow: hidden; }
+#neural-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+}
+.hero-copy, .hero-card { position: relative; z-index: 1; }
+
+/* Gradient headline */
+.gradient-title {
+  background: linear-gradient(
+    125deg,
+    var(--text) 0%,
+    color-mix(in srgb, var(--primary) 80%, var(--text)) 45%,
+    var(--accent-2) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Typewriter role line */
+.typewriter-line {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  min-height: 2.2em;
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--primary);
+  border-radius: 2px;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 1px;
+  flex-shrink: 0;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Eyebrow styled as code comment */
+.eyebrow-code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* AI achievement badges below hero headline */
+.ai-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 18px 0 28px;
+}
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  border: 1px solid color-mix(in srgb, var(--primary) 28%, var(--line));
+  background: color-mix(in srgb, var(--primary) 9%, var(--surface));
+  color: var(--primary);
+  transition: transform 180ms ease, background 180ms ease;
+}
+.ai-badge:hover { transform: translateY(-2px); background: color-mix(in srgb, var(--primary) 16%, var(--surface)); }
+.ai-badge.gold {
+  border-color: color-mix(in srgb, #f59e0b 28%, var(--line));
+  background: color-mix(in srgb, #f59e0b 9%, var(--surface));
+  color: color-mix(in srgb, #f59e0b 85%, var(--text));
+}
+.ai-badge.purple {
+  border-color: color-mix(in srgb, var(--accent-2) 28%, var(--line));
+  background: color-mix(in srgb, var(--accent-2) 9%, var(--surface));
+  color: var(--accent-2);
+}
+
+/* Hero card glow */
+.hero-card {
+  box-shadow: var(--shadow),
+    0 0 0 1px color-mix(in srgb, var(--primary) 18%, transparent),
+    0 0 60px color-mix(in srgb, var(--accent-2) 10%, transparent);
+}
+.hero-card::after {
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  left: -5%;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent-2) 22%, transparent), transparent 70%);
+  pointer-events: none;
+}
+
+/* Pulsing online dot */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.45); }
+  50%       { box-shadow: 0 0 0 9px rgba(34,197,94,0); }
+}
+.status-pill span { animation: pulse-glow 2.2s ease infinite; }
+
+/* Project card hover glow */
+.project-card:hover {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 45%, transparent),
+              0 24px 60px rgba(37, 99, 235, 0.18);
+}
+
+/* Quick-facts gradient numbers */
+.quick-facts strong {
+  display: block;
+  font-size: 1.18rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Tech-specific badge colours */
+.skill-cloud span { transition: transform 160ms ease; cursor: default; }
+.skill-cloud span:hover { transform: translateY(-3px); }
+
+.tag-python  { --tc: #3776ab; }
+.tag-pytorch { --tc: #ee4c2c; }
+.tag-hf      { --tc: #ff9900; }
+.tag-docker  { --tc: #2496ed; }
+.tag-mlops   { --tc: #06b6d4; }
+.tag-llm     { --tc: #8b5cf6; }
+.tag-ml      { --tc: #10b981; }
+.tag-cv      { --tc: #f97316; }
+[class*="tag-"] {
+  background: color-mix(in srgb, var(--tc) 11%, var(--surface)) !important;
+  border-color: color-mix(in srgb, var(--tc) 24%, var(--line)) !important;
+  color: color-mix(in srgb, var(--tc) 90%, var(--text)) !important;
+}
+
+/* Achievement marquee */
+.achievement-strip {
+  position: relative;
+  overflow: hidden;
+  padding: 14px 0;
+  display: block !important;
+}
+.achievement-strip::before,
+.achievement-strip::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 72px;
+  z-index: 2;
+  pointer-events: none;
+}
+.achievement-strip::before { left: 0;  background: linear-gradient(to right, var(--bg), transparent); }
+.achievement-strip::after  { right: 0; background: linear-gradient(to left,  var(--bg), transparent); }
+.achievement-strip-inner {
+  display: flex;
+  gap: 0.65rem;
+  width: max-content;
+  animation: marquee 36s linear infinite;
+}
+.achievement-strip-inner:hover { animation-play-state: paused; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.achievement-strip span {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Section accent line */
+.section-heading h2::after {
+  content: "";
+  display: block;
+  margin-top: 14px;
+  height: 3px;
+  width: 48px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--accent-2));
+}
+
+/* Feature-card icon gradient variants */
+.feature-card:nth-child(2) .icon { background: linear-gradient(135deg, var(--accent-2), var(--accent)); }
+.feature-card:nth-child(3) .icon { background: linear-gradient(135deg, var(--accent), var(--primary)); }
+
+/* Timeline item accent numbers */
+.timeline-item:nth-child(2) span { background: color-mix(in srgb, var(--accent-2) 14%, transparent); color: var(--accent-2); }
+.timeline-item:nth-child(3) span { background: color-mix(in srgb, var(--accent) 14%, transparent);   color: var(--accent); }
+
+/* Responsive: hide canvas on small screens to save CPU */
+@media (max-width: 640px) {
+  #neural-bg { display: none; }
+  .ai-highlights { gap: 7px; }
+}

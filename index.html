@@ -41,18 +41,25 @@ title: "Rajnish Maurya | Data Science & AI Portfolio"
 
   <main>
     <section class="hero section-shell">
+      <canvas id="neural-bg" aria-hidden="true"></canvas>
       <div class="hero-copy reveal">
-        <p class="eyebrow">M.Tech Data Science & Artificial Intelligence · IIT Madras</p>
-        <h1>Building research-driven AI, LLM, and MLOps systems.</h1>
-        <p class="hero-subtitle">I am an M.Tech Data Science and Artificial Intelligence student at IIT Madras, with experience in vision-language foundation models, mathematical LLM evaluation, LoRA fine-tuning, and end-to-end MLOps pipelines.</p>
+        <p class="eyebrow eyebrow-code">// M.Tech Data Science &amp; AI · IIT Madras</p>
+        <div class="typewriter-line" aria-live="polite"><span id="typewriter">AI Engineer</span><span class="cursor" aria-hidden="true"></span></div>
+        <h1 class="gradient-title">Building intelligent systems — from research to production.</h1>
+        <p class="hero-subtitle">M.Tech DS&amp;AI student at IIT Madras. I work on LLM evaluation &amp; fine-tuning, vision-language foundation models, and end-to-end MLOps pipelines. I connect rigorous research with reliable engineering.</p>
+        <div class="ai-highlights">
+          <span class="ai-badge gold">🏆 IndiaAI Fellow 2025</span>
+          <span class="ai-badge">☁️ Amazon ML Summer School 2025</span>
+          <span class="ai-badge purple">🎯 AIR 300 · GATE DS&amp;AI 2024</span>
+        </div>
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View Projects</a>
           <a class="btn secondary" href="mailto:mauryarajnish73@gmail.com">Contact Me</a>
         </div>
         <div class="quick-facts" aria-label="Portfolio highlights">
-          <div><strong>AIR 300</strong><span>GATE DA 2024</span></div>
+          <div><strong><span data-count="300" data-suffix="">300</span></strong><span>GATE AIR · DS&amp;AI</span></div>
           <div><strong>IndiaAI</strong><span>Fellow 2025</span></div>
-          <div><strong>Amazon MLSS</strong><span>Selected 2025</span></div>
+          <div><strong><span data-count="400" data-suffix="+">400+</span></strong><span>Problems Solved</span></div>
         </div>
       </div>
       <aside class="hero-card reveal" aria-label="Profile card">
@@ -104,12 +111,30 @@ title: "Rajnish Maurya | Data Science & AI Portfolio"
           <strong>CGPA: 8.18</strong>
         </article>
       </div>
-      <div class="achievement-strip reveal" aria-label="Achievements">
-        <span>Selected for Amazon Machine Learning Summer School 2025</span>
-        <span>Received IndiaAI Fellowship 2025 by Government of India</span>
-        <span>Secured AIR 300 in GATE 2024 Data Science and AI</span>
-        <span>Secured AIR 1594 in GATE 2023 Computer Science</span>
-        <span>Solved 400+ coding problems on LeetCode and GeeksforGeeks</span>
+      <div class="achievement-strip" aria-label="Achievements">
+        <div class="achievement-strip-inner">
+          <span>🏆 Selected for Amazon Machine Learning Summer School 2025</span>
+          <span>·</span>
+          <span>🇮🇳 Received IndiaAI Fellowship 2025 by Government of India</span>
+          <span>·</span>
+          <span>🎯 Secured AIR 300 in GATE 2024 Data Science &amp; AI</span>
+          <span>·</span>
+          <span>💡 Secured AIR 1594 in GATE 2023 Computer Science</span>
+          <span>·</span>
+          <span>⌨️ Solved 400+ coding problems on LeetCode and GeeksforGeeks</span>
+          <span>·</span>
+          <!-- duplicate for seamless infinite loop -->
+          <span>🏆 Selected for Amazon Machine Learning Summer School 2025</span>
+          <span>·</span>
+          <span>🇮🇳 Received IndiaAI Fellowship 2025 by Government of India</span>
+          <span>·</span>
+          <span>🎯 Secured AIR 300 in GATE 2024 Data Science &amp; AI</span>
+          <span>·</span>
+          <span>💡 Secured AIR 1594 in GATE 2023 Computer Science</span>
+          <span>·</span>
+          <span>⌨️ Solved 400+ coding problems on LeetCode and GeeksforGeeks</span>
+          <span>·</span>
+        </div>
       </div>
     </section>
 
@@ -257,7 +282,32 @@ title: "Rajnish Maurya | Data Science & AI Portfolio"
         <h2>Skills that support end-to-end AI development.</h2>
       </div>
       <div class="skill-cloud reveal">
-        <span>Python</span><span>C++</span><span>SQL</span><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Computer Vision</span><span>LLMs</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>NLTK</span><span>Pandas</span><span>NumPy</span><span>Flask</span><span>FastAPI</span><span>Git</span><span>MLflow</span><span>DVC</span><span>Docker</span><span>Grafana</span><span>Prometheus</span><span>Roboflow</span><span>Hugging Face PEFT</span><span>TRL</span><span>LoRA</span>
+        <span class="tag-python">Python</span>
+        <span>C++</span>
+        <span>SQL</span>
+        <span class="tag-ml">Machine Learning</span>
+        <span class="tag-ml">Deep Learning</span>
+        <span class="tag-llm">NLP</span>
+        <span class="tag-cv">Computer Vision</span>
+        <span class="tag-llm">LLMs</span>
+        <span class="tag-pytorch">PyTorch</span>
+        <span>TensorFlow</span>
+        <span class="tag-ml">Scikit-learn</span>
+        <span>NLTK</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Flask</span>
+        <span class="tag-mlops">FastAPI</span>
+        <span>Git</span>
+        <span class="tag-mlops">MLflow</span>
+        <span class="tag-mlops">DVC</span>
+        <span class="tag-docker">Docker</span>
+        <span class="tag-mlops">Grafana</span>
+        <span class="tag-mlops">Prometheus</span>
+        <span class="tag-cv">Roboflow</span>
+        <span class="tag-hf">Hugging Face PEFT</span>
+        <span class="tag-hf">TRL</span>
+        <span class="tag-llm">LoRA</span>
       </div>
       <div class="feature-grid reveal">
         <article class="feature-card">
